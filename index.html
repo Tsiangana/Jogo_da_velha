@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jogo da velha</title>
+	<script src="jquery-3.6.1.slim.js"></script>
+	<script src="jogo.js"></script>
+	
+</head>
+<body>
+
+	<div align="center" id="pagina_inicial">
+		<table border="0">
+			<tbody>
+				<tr>
+					<td colspan="3" style="text-align: center;color: green;"><h2>Jogo da velha</h2></td>
+				</tr>
+
+				<tr>
+					<td align="center">
+						<img src="imagens/1.ico"><br>
+						<input id="entrada_apelido_jogador1" type="text" maxlength="10" placeholder="Apelido jogador 1" style="border:0px">
+					</td>
+					<td style="text-align: center;color: greenyellow;" align="center">
+						<img id="btn-carregar-jogo" src="imagens/comecar.ico" style="margin-bottom: -50px;"><br><h3>COMEÇAR JOGO</h3>
+					</td>
+					<td align="center">
+						<img src="imagens/2.ico"><br>
+						<input id="entrada_apelido_jogador2" type="text" maxlength="10" placeholder="Apelido jogador 2" style="border:0px">
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+
+
+	<div id="palco_do_jogo" style="display: none;margin-top: 50px;text-align: center;">
+
+		<div style="display: inline-block;"><img src="imagens/1.ico"><br>
+			<span id="nome_jogador1"></span>
+		</div>
+
+		<div style="display: inline-block;">
+			<table border="0">
+				<tr>
+
+					<td style="border-bottom: 1px solid black; border-right: 1px solid black;">
+						<div style="width:100px; height: 100px;" class="jogada" id="a-1"></div>
+					</td>
+
+					<td style="border-bottom: 1px solid black; border-right: 1px solid black;border-left: 1px solid black;">
+						<div style="width:100px; height: 100px;" class="jogada" id="a-2"></div>
+					</td>
+
+					<td style="border-bottom: 1px solid black; border-left: 1px solid black;">
+						<div style="width:100px; height: 100px;" class="jogada" id="a-3"></div>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-bottom: 1px solid black; border-right: 1px solid black; border-top: 1px solid black;">
+						<div style="width:100px; height: 100px;" class="jogada" id="b-1"></div>
+					</td>
+
+					<td style="border-bottom: 1px solid black; border-right: 1px solid black; border-top: 1px solid black; border-left: 1px solid black;">
+						<div style="width:100px; height: 100px;" class="jogada" id="b-2"></div>
+					</td>
+
+					<td style="border-bottom: 1px solid black; border-left: 1px solid black; border-top: 1px solid black;">
+						<div style="width:100px; height: 100px;" class="jogada" id="b-3"></div>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-top: 1px solid black; border-right: 1px solid black;">
+						<div style="width:100px; height: 100px;" class="jogada" id="c-1"></div>
+					</td>
+
+					<td style="border-top: 1px solid black; border-right: 1px solid black; border-left: 1px solid black;">
+						<div style="width:100px; height: 100px;" class="jogada" id="c-2"></div>
+					</td>
+
+					<td style="border-top: 1px solid black; border-left: 1px solid black;">
+						<div style="width:100px; height: 100px;" class="jogada" id="c-3"></div>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div style="display: inline-block;">
+			<img src="imagens/2.ico"><br>
+			<span id="nome_jogador2"></span>
+		</div>
+
+	</div>
+
+</body>
+</html>
